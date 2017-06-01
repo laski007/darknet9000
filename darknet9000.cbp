@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="darknet9000" />
+		<Option pch_mode="2" />
+		<Option compiler="opencl_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/darknet9000" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="opencl_compiler" />
+				<Option parameters="detect cfg/yolo.cfg yolo.weights data/dog.jpg" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DGPU=1" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/darknet9000" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="opencl_compiler" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="activation_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="activation_layer.h" />
+		<Unit filename="activations.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="activations.h" />
+		<Unit filename="art.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="avgpool_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="avgpool_layer.h" />
+		<Unit filename="batchnorm_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="batchnorm_layer.h" />
+		<Unit filename="blas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="blas.h" />
+		<Unit filename="box.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="box.h" />
+		<Unit filename="captcha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cifar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="classifier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="classifier.h" />
+		<Unit filename="coco.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="col2im.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="col2im.h" />
+		<Unit filename="compare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="connected_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="connected_layer.h" />
+		<Unit filename="convolutional_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="convolutional_layer.h" />
+		<Unit filename="cost_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cost_layer.h" />
+		<Unit filename="crnn_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crnn_layer.h" />
+		<Unit filename="crop_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crop_layer.h" />
+		<Unit filename="darknet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="data.h" />
+		<Unit filename="deconvolutional_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="deconvolutional_layer.h" />
+		<Unit filename="demo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="demo.h" />
+		<Unit filename="detection_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="detection_layer.h" />
+		<Unit filename="detector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dropout_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dropout_layer.h" />
+		<Unit filename="gemm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gemm.h" />
+		<Unit filename="go.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gru_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gru_layer.h" />
+		<Unit filename="im2col.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="im2col.h" />
+		<Unit filename="image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="image.h" />
+		<Unit filename="layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="layer.h" />
+		<Unit filename="list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="list.h" />
+		<Unit filename="local_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="local_layer.h" />
+		<Unit filename="lsd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="matrix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="matrix.h" />
+		<Unit filename="maxpool_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="maxpool_layer.h" />
+		<Unit filename="network.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="network.h" />
+		<Unit filename="nightmare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="normalization_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="normalization_layer.h" />
+		<Unit filename="opencl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="opencl.h" />
+		<Unit filename="option_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="option_list.h" />
+		<Unit filename="parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="parser.h" />
+		<Unit filename="region_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="region_layer.h" />
+		<Unit filename="regressor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="reorg_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="reorg_layer.h" />
+		<Unit filename="rnn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rnn_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rnn_layer.h" />
+		<Unit filename="rnn_vid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="route_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="route_layer.h" />
+		<Unit filename="shortcut_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="shortcut_layer.h" />
+		<Unit filename="softmax_layer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="softmax_layer.h" />
+		<Unit filename="src/activation_kernels.cl" />
+		<Unit filename="src/avgpool_layer_kernels.cl" />
+		<Unit filename="src/blas_kernels.cl" />
+		<Unit filename="src/col2im_kernels.cl" />
+		<Unit filename="src/convolutional_kernels.cl" />
+		<Unit filename="src/crop_layer_kernels.cl" />
+		<Unit filename="src/deconvolutional_kernels.cl" />
+		<Unit filename="src/dropout_layer_kernels.cl" />
+		<Unit filename="src/gemm.cl" />
+		<Unit filename="src/gemm_fast.cl" />
+		<Unit filename="src/im2col_kernels.cl" />
+		<Unit filename="src/maxpool_layer_kernels.cl" />
+		<Unit filename="src/network_kernels.cl" />
+		<Unit filename="stb_image.h" />
+		<Unit filename="stb_image_write.h" />
+		<Unit filename="super.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="swag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tree.h" />
+		<Unit filename="utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils.h" />
+		<Unit filename="voxel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="writing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="yolo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
